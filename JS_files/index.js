@@ -35,7 +35,7 @@ function changeText(button) {
   }
   
   function text() {
-  typing(array[number],"screen",30,'|');
+  typing(array[number],"screen",10,'|');
   }
 
   ele.addEventListener('click',text );
