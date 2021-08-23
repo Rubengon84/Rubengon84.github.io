@@ -1,0 +1,852 @@
+
+/* GENERAL STYLE */
+
+* { 
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  transition: background-color 1s, color 1s;
+}  
+
+html {
+
+  min-width: 330px;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("./images/background_codin_color_DarkBlue.png");
+  background-repeat:repeat-y;
+  background-size: auto ;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template: 25% 65% 10% / repeat(8, 1fr);
+
+ }
+
+
+header {
+  font-family: Ubuntu;
+  grid-area: 1 / 1 / 2 / 9;
+}
+
+
+header ul { 
+ height: 3.1rem;
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background-color: rgba(255, 255, 255, 0.3);
+ border-radius: 5px;
+}
+
+nav {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+nav a {
+  padding: 0.2rem 0;
+ }
+
+ a {
+  text-decoration: none;
+}
+
+a, a:visited{
+ color: black;
+}
+
+main {
+  width: 100%;
+  grid-area: 2 / 1 / 3 / 9;
+  display: grid;
+  grid-template-rows: 1fr ;
+  grid-template-columns: 35% 65%;
+}
+
+footer {
+  grid-area: 3 / 1 / 4 / 9;
+  margin: 5px auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 98%;
+  border-radius: 0.6rem;
+  height: 80px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+
+
+}
+
+footer a {
+  color:rgb(0, 0, 0);
+}
+
+footer span {
+  color:black;
+  font-weight: bold;
+  display: none;
+  padding-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+footer img {
+  border: 1px solid black;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.mainContainer {
+  grid-area: 1 / 1 / 2 / 3 ;
+  margin: 1rem 1rem 3rem;
+ }
+
+ #cornerButton {
+   width: 2.5rem;
+   display: flex;
+   position:absolute;
+   top: 1.5rem;
+   left: 1rem;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #colorButton {
+
+  height: 2.5rem;
+  width: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+} 
+
+ #toggle {
+   background-color: rgb(233, 181, 38);
+   margin: 0 auto;
+   height: 1.4rem;
+   width: 1.4rem;
+   border-radius: 2rem;
+  
+   box-shadow:0px 0px 0px 2px black inset;
+   transition: transform 0.3s, background-color 1s;
+ }
+
+ #colorLetters {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 0.6rem;
+  text-align:center;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+ }
+
+.title {
+
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.1rem 0.4rem;
+  text-shadow: 8px 8px 8px rgb(0, 0, 0);
+  color: rgb(233, 181, 38);
+  background-image: url("./images/Rubengon.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position:96% center;
+}
+
+.prepTitle{
+  font-size: 2rem;
+ }
+
+.menuTabs {
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  display: inline-block;
+  color:rgb(59, 58, 58);
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow:2px 2px 1px rgb(51, 51, 51); 
+ }
+
+ .journeyText p, .mylearning p, .mainContainerProjects p, .mainContainer p {
+   line-height: 1.4rem;
+ }  
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+#correo {
+  padding: 0 2px;
+}
+
+.button:hover {  /* Hover mouse animation on buttons*/
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button:active { /* Animation of pressing the Button like a real button */
+  transform: translateY(2px) translateX(1px);
+  box-shadow:0.5px 0.5px 1px grey; 
+
+}
+
+
+#projects {
+  grid-template: 13% 80% 7% / repeat(8, 1fr);
+ }
+
+ .large {
+  grid-template: 13% 82% 5% / repeat(8, 1fr);
+ }
+
+/*------------------END GENERAL STYLES----------------*/
+
+/*---------------INDEX PAGE---------------------------*/
+
+
+.animation {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.wrap span {
+  text-align: center;
+  width: auto;
+  font-family: Roboto;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.2rem;
+  box-shadow:2px 2px 1px grey;  
+}
+
+
+.computer {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/pc_large_vertical2.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 100%;
+  max-width: 300px;
+  min-height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+.up { /* Enty Container for the Margin of the computer Text */
+  width: 100%;
+  height: 19%;
+  flex-shrink: 2;
+}
+
+.down { /* Enty Container for the Margin of the computer Text */
+  width: 100%;
+  height: 30%;
+  flex-shrink: 2;
+}
+
+.screen {
+
+  border-radius: 5px;
+  font-family: roboco;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  display: block;
+  width: 68%;
+  flex-grow: 2;
+  color: white;
+  background-color:rgba(0, 0, 0, 0);
+ }
+
+/*------------------END INDEX PAGE-----------------------*/
+
+/*------------------JOURNEY PAGE-------------------------*/
+
+#journey {
+  grid-template: 19% 71% 10% / repeat(8, 1fr);
+  row-gap: 1rem;
+}
+
+
+.journeyText {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  height: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-family: roboto;
+  font-size: 1rem;
+  color: white;
+}
+
+.journeyText h2 {
+  font-size: 1.8rem;
+}
+
+#page1, #page3, #page2, #page4 {
+  transform-origin: left;
+  transition: transform 2s , z-index 2s ;
+}
+
+#page1 {
+  z-index: 3;
+}
+#page2 {
+  z-index: 2;
+}
+#page3 {
+  z-index: 1;
+}
+#page4 {
+  z-index: 0;
+}
+
+
+.arrowBox {
+  display: inline-flex;
+  width: 3.5rem;
+  height: 2rem;
+  position: relative;
+}
+
+.arrowBox:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.arrow {
+  position:absolute;
+  line-height: 0.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+
+}
+
+.aLeft { /* Align the left arrow with the text*/
+  right: 0%;
+}
+
+.arrowText { /* Make the Text by the Shawdow of the text */
+
+  color:rgba( 255, 255, 255, 0);
+  font-size: 1.5rem;
+  position: absolute;
+  text-shadow: 0px 15px 2px white;
+}
+
+.arrowContainer {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.pageCaption {
+  align-self: flex-end;
+  margin: 0 auto;
+}
+
+#back1 {
+  display: none;
+}
+
+/*------------------END JOURNEY PAGE----------------*/
+
+/*------------------LEARNING PAGE-------------------------*/
+
+#learningBody {
+  grid-template: 9% 85% 8% / repeat(8, 1fr);
+  row-gap: 1rem;
+}
+
+
+.mylearning {
+  text-align: center;
+}
+
+.mylearning p {
+  text-align: left;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0rem 0.6rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.mylearning ul {
+  display: inline-block;
+  width: auto;
+  list-style-type: square;
+}
+
+.mylearning h2 {
+  border-radius: 10px 10px 0 0;
+  text-decoration: underline;
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+  color: white;
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.certificateLink {
+  color: white;
+  margin: 0.4rem 0;
+  padding: 0.4rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px  black;
+}
+
+
+.frame {  /* Frame for the Certificates*/
+  display: flex;
+  position: fixed;
+  width: 90%;
+  min-height: 240px;
+  max-height: 500px;
+  height: auto;
+  top:25%;
+  right: -84%;
+  transition: right 2s;
+}
+
+.frame img {
+  border:2px solid white;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  min-width: 250px;
+  min-height: 240px;
+
+}
+
+#certiButton {  /* Button Open & Close for the frame with the certificate */
+  border-radius: 10px 0px 0px 10px;
+  padding: 0.3rem 0rem;
+  padding-right: 0.8rem;
+  font-size: 2.1rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  word-wrap: break-word;
+  letter-spacing: 0.7rem;
+  line-height: 2.5rem;
+  text-align:center;
+  height: 100%;
+  min-height: 100%;
+  color: black;
+  max-width: 50px;
+  width: 10%;
+}
+
+.certificateLink:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#certiButton:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*------------------END LEARNING PAGE----------------*/
+
+/*------------------PROJECTS PAGE-------------------------*/
+
+#projectsBody {
+  grid-template: 10% 82% 8% / repeat(8, 1fr);
+  row-gap: 1rem;
+}
+
+.mainContainerProjects {
+  grid-area: 1 / 1 / 2 / 3 ;
+  margin: 1rem;
+  color: white;
+}
+
+.mainContainerProjects p {
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0.5rem auto 1rem;
+}
+
+#introduction {
+  border-radius: 20px;
+}
+
+.largeContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectsContainer {
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 1rem;
+}
+.projectsContainer h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+.projectsContainer p {
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  width: 90%;
+  padding: 0 0.5rem;
+}
+
+.projectsContainer a {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.4rem;
+  color: white;
+}
+
+.projectsContainer a:hover, .projectsContainera a:active{
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+/*------------------END PROJECTS PAGE----------------*/
+
+/*------------------CONTACT-ME PAGE-------------------------*/
+
+
+.buttons {
+
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactMe{
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contactMe h2 {
+  font-size: 1.8rem;
+}
+#contactMe p {
+  padding: 0.8rem;
+}
+
+#contactMe form {
+  width: 85%;
+  padding: 0.8rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contactmeFrame {
+  width: 80%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+#text {
+  width: 85%;
+}
+
+.formLabel {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  width: auto;
+}
+
+#text, #sendButton {
+  margin: 0.4rem;
+}
+
+#sendButton {
+  font-size: 1.3rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*------------------END CONTACT PAGE----------------*/
+
+/*------------------BREAKS POINTS------------------*/
+
+
+@media screen and (min-width: 600px) {
+   
+
+  /*------min-width: 600px--GENERAL STYLE-----------------*/
+ 
+
+  body{
+    grid-template: 25% 70% 10% / repeat(8, 1fr);
+  }
+
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav .menuTabs {
+    margin-right: 5%;
+    font-size: 1.1rem;
+  }
+
+
+  main {
+    grid-template-columns: 50% 50%;
+  }
+ 
+  .title {
+    padding: 1rem 0.5rem; 
+    text-align: left;
+    font-size: 3.4rem;
+    background-size: 65px;
+   }
+ 
+   #prepTitle {
+     display: none;
+   }
+
+   footer span {
+    display:block;
+  }
+  
+
+  #homeTab {
+    margin-left: 5%;
+    margin-right: auto;
+  }
+
+
+ /*--------min-width: 600px--HOME PAGE-------------------*/
+  
+  #title {
+    margin-left: 5rem;
+  }
+
+
+  #titleIndex {
+   background-image: none;
+ }
+
+  .animation {
+    background-image: url("./images/Rubengon.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position:  center;
+    max-width: 500px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .wrap {
+    font-weight: bold;
+    width: 5%;
+    height: 60%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start; 
+  }
+  
+  .left {
+    justify-self: self-start;
+    align-items: flex-end;
+  }
+
+
+  .computer {
+    background-image: url("./images/pc_large2.png");
+    background-size: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .up {
+  height: 25%;
+  }
+
+  .down {
+  height: 25%;
+  }
+
+  #screen {
+  width: 80%;
+  height: 35%;
+  }
+
+
+  footer span {
+  display:block;
+  }
+
+ /*-------------------END HOME PAGE-------------------*/
+
+ /*--------min-width: 600px--JOURNEY PAGE-------------------*/
+
+
+ .mainContainer {
+  margin: 1rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .divisionM1 {
+   grid-area: 1 / 1 / 2 / 2; 
+ }
+                   /*Divide the Notebook in two pages*/
+  .divisionM2 {
+   grid-area: 1 / 2 / 2 / 3;
+  }
+
+.journeyText {
+
+  display: flex;
+  align-items: flex-start;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+
+#next1, #next3, #next4{
+  display: none;
+ }
+                   /* Buttons not necessary any more with this layout */
+ #back1, #back2, #back4 {
+   display: none;
+ }
+
+ #page2 {
+   z-index: 1;
+ }
+
+ /*-------------------END JOURNEY PAGE-------------------*/
+
+ /*--------min-width: 600px--LEARNING PAGE-------------------*/
+ 
+ #learningBody {
+  grid-template: 10% 80% 10% / repeat(8, 1fr);
+ }
+
+ .mylearning p {
+  font-size: 1.2rem;
+ }
+
+
+ /*--------min-width: 600px--PROJECTS PAGE-------------------*/
+
+ #projectsBody {
+  grid-template: 13% 70% 17% / repeat(8, 1fr);
+ }
+
+}
+
+@media screen and (min-width: 900px) {
+  
+
+  /*------min-width: 900px--GENERAL STYLE-----------------*/
+
+  html {
+    font-size: 18px;
+  }
+
+  body{
+    grid-template: 30% 60% 10% / repeat(8, 1fr);
+  }
+
+ /*--------min-width: 900px--HOME PAGE-------------------*/
+
+  .up {
+      height: 18%;
+  }
+  
+ /*--------min-width: 900px--JOURNEY PAGE-------------------*/
+
+
+  #journey {
+    grid-template: 22% 68% 10% / repeat(8, 1fr);
+  }
+
+
+ /*--------min-width: 900px--PROJECTS PAGE-------------------*/
+
+  #projectsBody {
+   grid-template: 20% 67% 13% / repeat(8, 1fr);
+  }
+
+  .frame {
+      right: -87%;
+  }
+
+ /*--------min-width: 900px--CONTACT PAGE-------------------*/
+  
+
+  #contactBody {
+   grid-template: 25% 65% 15% / repeat(8, 1fr);
+  }
+
+
+}

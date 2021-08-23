@@ -30,6 +30,7 @@ header {
   grid-area: 1 / 1 / 2 / 9;
 }
 
+
 header ul { 
  height: 3.1rem;
  width: 100%;
@@ -101,7 +102,47 @@ footer img {
   margin: 1rem 1rem 3rem;
  }
 
+ #cornerButton {
+  width: 2.5rem;
+  display: flex;
+  position:absolute;
+  top: 1.5rem;
+  left: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#colorButton {
+
+ height: 2.5rem;
+ width: 1.5rem;
+ border-radius: 1rem;
+ background-color: rgb(255, 255, 255);
+ box-shadow: 3px 3px 3px black;
+ cursor: pointer;
+} 
+
+#toggle {
+  margin: 0 auto;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 2rem;
+  background-color: black;
+  transition: transform 0.3s;
+}
+
+#colorLetters {
+ color: white;
+ text-shadow: 2px 2px 2px black;
+ font-size: 0.6rem;
+ text-align:center;
+ font-weight: bold;
+ writing-mode: vertical-rl;
+ text-orientation: upright;
+}
+
 .title {
+
   text-align: center;
   font-size: 3rem;
   padding: 0.1rem 0.4rem;
@@ -636,7 +677,7 @@ button:hover {
  /*--------min-width: 600px--HOME PAGE-------------------*/
   
   #title {
-    margin-left: 2rem;
+    margin-left: 5rem;
   }
 
 
