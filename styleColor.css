@@ -132,7 +132,6 @@ footer img {
    height: 1.4rem;
    width: 1.4rem;
    border-radius: 2rem;
-  
    box-shadow:0px 0px 0px 2px black inset;
    transition: transform 0.3s, background-color 1s;
  }
@@ -545,10 +544,11 @@ footer img {
   border-radius: 10px;
   padding: 0.4rem;
   color: white;
+  margin-bottom: 0.4rem;
 }
 
-.projectsContainer a:hover, .projectsContainera a:active{
-  background-color: white;
+.projectsContainer a:hover, .projectsContainer a:active{
+  background-color: rgb(41, 196, 41);
   color: black;
   transform: scale(1.1);
 }
