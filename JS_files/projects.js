@@ -2,6 +2,13 @@
 
 
 const objProjects = [
+  RedditReactSPA ={
+    h2: "Reddit React",
+    p: 'This is my first React & React-Redux App create from scratch, totally functional, getting the data from reddit api, and displayed in a react responsive SPA.',
+    aGit: 'https://github.com/Rubengon84/RedditApp' ,
+    aNetlify: 'https://reddit-jimmy.netlify.app/'
+  },
+  
   Aequor ={
     h2: "P.Aequor organism",
     p: 'CodeCademy project JavaScript practice where there is a Factory function for creating objects that simulate the DNA of P.Aequor organism, with some methods to works with the DNA bases.',
