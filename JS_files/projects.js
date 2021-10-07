@@ -5,7 +5,7 @@ const objProjects = [
   RedditReactSPA ={
     h2: "Reddit React",
     p: 'This is my first React & React-Redux App create from scratch, totally functional, getting the data from reddit api, and displayed in a react responsive SPA.',
-    aGit: 'https://github.com/Rubengon84/RedditApp' ,
+    aGit: 'https://github.com/Rubengon84/reddit-react' ,
     aNetlify: 'https://reddit-jimmy.netlify.app/'
   },
   
