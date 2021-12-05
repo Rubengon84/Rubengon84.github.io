@@ -16,7 +16,7 @@ html {
 
 body {
   background-image: url("./images/background_codin_color_DarkBlue.png");
-  background-repeat:repeat-y;
+  background-repeat:repeat;
   background-size: auto ;
   width: 100%;
   height: auto;
@@ -488,7 +488,7 @@ footer img {
 /*------------------PROJECTS PAGE-------------------------*/
 
 #projectsBody {
-  grid-template: 10% 82% 8% / repeat(8, 1fr);
+  grid-template: 5% 90% 5% / repeat(8, 1fr);
   row-gap: 1rem;
 }
 
@@ -527,6 +527,7 @@ footer img {
   margin-bottom: 1rem;
 }
 .projectsContainer h2 {
+  color: rgb(233, 181, 38);
   text-align: center;
   font-size: 1.5rem;
   padding: 0 0.5rem;
@@ -799,7 +800,7 @@ button:hover {
  /*--------min-width: 600px--PROJECTS PAGE-------------------*/
 
  #projectsBody {
-  grid-template: 13% 70% 17% / repeat(8, 1fr);
+  grid-template: 8% 84% 8% / repeat(8, 1fr);
  }
 
 }
@@ -834,7 +835,7 @@ button:hover {
  /*--------min-width: 900px--PROJECTS PAGE-------------------*/
 
   #projectsBody {
-   grid-template: 20% 67% 13% / repeat(8, 1fr);
+   grid-template: 12% 80% 8% / repeat(8, 1fr);
   }
 
   .frame {
