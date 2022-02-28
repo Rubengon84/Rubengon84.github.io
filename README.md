@@ -9,8 +9,7 @@
 
 ### General Info
 
-This is my first website project, I tried to be focus on make it responsive of any divice's size, interective and with different layouts anf features.
-I made it in black and white but I will add the option of making colourfull soon as others animations that I have in mind.
+This is my large first website project, trying to be focus on make it responsive of any device’s size using CSS-Grid and Flex box, interactive to the user, and with different layouts and features. I made it in black and white at the biggening but with option button to make it colorful, Only used HTML, CSS and plain JavaScript, not any modules used, all the features are designed and coded from the scratch. 
 
 ### Technologies
 
