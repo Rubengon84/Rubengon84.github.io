@@ -498,6 +498,13 @@ footer img {
   color: white;
 }
 
+.mainContainerProjects h2 {
+ margin: 1rem auto;
+ padding: 1rem;
+ text-align: center;
+ font-size: 2rem;
+}
+
 .mainContainerProjects p {
   font-size: 1.2rem;
   padding: 1rem;
@@ -513,11 +520,20 @@ footer img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projectWrapContainer {
+  border: 2px solid white;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  background-color: rgba(9,11,15, 0.5);
 }
 
 .projectsContainer {
   border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgb(35,43,58);
   padding: 0.5rem;
   display: inline-flex;
   flex-direction: column;
@@ -539,7 +555,6 @@ footer img {
   color: black;
   width: 90%;
   padding: 0 0.5rem;
-  
   overflow-x: auto;
 }
 
@@ -803,7 +818,7 @@ button:hover {
  /*--------min-width: 600px--PROJECTS PAGE-------------------*/
 
  #projectsBody {
-  grid-template: 5% 90% 5% / repeat(8, 1fr);
+  grid-template: 3% 95% 2% / repeat(8, 1fr);
  }
 
 }
@@ -838,7 +853,7 @@ button:hover {
  /*--------min-width: 900px--PROJECTS PAGE-------------------*/
 
   #projectsBody {
-   grid-template: 8% 87% 5% / repeat(8, 1fr);
+   grid-template: 5% 93% 2% / repeat(8, 1fr);
   }
 
   .frame {
