@@ -488,7 +488,7 @@ footer img {
 /*------------------PROJECTS PAGE-------------------------*/
 
 #projectsBody {
-  grid-template: 5% 90% 5% / repeat(8, 1fr);
+  grid-template: 3% 95% 5% / repeat(8, 1fr);
   row-gap: 1rem;
 }
 
@@ -516,7 +516,7 @@ footer img {
 }
 
 .projectsContainer {
-  
+  border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 0.5rem;
   display: inline-flex;
@@ -533,11 +533,14 @@ footer img {
   padding: 0 0.5rem;
 }
 .projectsContainer p {
+  max-height: 180px;
   font-size: 1rem;
   background-color: white;
   color: black;
   width: 90%;
   padding: 0 0.5rem;
+  
+  overflow-x: auto;
 }
 
 .projectsContainer a {
@@ -800,7 +803,7 @@ button:hover {
  /*--------min-width: 600px--PROJECTS PAGE-------------------*/
 
  #projectsBody {
-  grid-template: 8% 84% 8% / repeat(8, 1fr);
+  grid-template: 5% 90% 5% / repeat(8, 1fr);
  }
 
 }
@@ -835,7 +838,7 @@ button:hover {
  /*--------min-width: 900px--PROJECTS PAGE-------------------*/
 
   #projectsBody {
-   grid-template: 12% 80% 8% / repeat(8, 1fr);
+   grid-template: 8% 87% 5% / repeat(8, 1fr);
   }
 
   .frame {
