@@ -1,6 +1,6 @@
-const objProjects = [
+const mainProjects = [
   (Apptivity = {
-    h2: "Apptivity",
+    h2: "Apptivity (Mar-22)",
     p: `4 weeks final project in School of code. Team of 4 members, react SPA planned from
 the scratch, focusing on a real work project, user-personas, user-story, UI & UX design, 
 developing using Agile methodology with scrum and kanban, making weekly sprints 
@@ -12,7 +12,7 @@ Heroku with PostgreSQL database, testing using Super Test.
     aNetlify: "https://apptivity-app.netlify.app/",
   }),
   (SocMastermind = {
-    h2: "SoC Mastermind",
+    h2: "SoC Mastermind (Jan-22)",
     p: `Collaborated week project in School of code. Team of 4-member, SPA react app, 
 planned from the scratch, developing using Agile methodology, scrum and kanban, 
 making daily sprints. Front-End React-app deployed on Netlify, Back-end Rest API 
@@ -21,14 +21,14 @@ Express server hosted in Heroku with PostgreSQL data-base.`,
     aNetlify: "https://dreamy-mcnulty-895324.netlify.app/",
   }),
   (PhotoShowroom = {
-    h2: "Ivan photo-showroom",
+    h2:"Photo-showroom(Dec-21)",
     p: `My nephew's photo showroom project during the Christmas week break in School of 
 code. Front-end responsive interactive photo showroom webpage linked with Back-end REST API, both deployed on Heroku.`,
     aGit: "https://ivan-gallery.herokuapp.com/",
     aNetlify: "https://ivan-gallery.herokuapp.com/",
   }),
   (RugWebsite = {
-    h2: "Rug Website",
+    h2: "Rug Website (Oct-21)",
     p: `First project designed for a client, goals: SEO, fast loading for a good ranking on 
 search engines, responsive of any device’s size, interactive and attractive to users. Techs 
 used, HTML, CSS, JavaScript, Python (for sending the form to the client) not any
@@ -37,7 +37,7 @@ modules used, all the features are designed and coded from the scratch.`,
     aNetlify: "https://rug-website-project.netlify.app/",
   }),
   (RedditReactSPA = {
-    h2: "Reddit React",
+    h2: "Reddit React (May-21)",
     p: `My first React & React-Redux App ,totally functional, getting the data from reddit Rest 
 API, and displayed in a react responsive SPA. Techs used, HTML, CSS, JavaScript-React, 
 React-Redux, React-router-dom.
@@ -46,14 +46,16 @@ React-Redux, React-router-dom.
     aNetlify: "https://reddit-jimmy.netlify.app/",
   }),
   (Portfolio = {
-    h2: "Portfolio Project",
+    h2: "Portfolio Project (Apr-21)",
     p: `First website project, focusing on, responsive design to any device’s size using CSS-Grid and Flex box, interactive to the user with different layouts and features. Code 
 techs used HTML, CSS and JavaScript, not any modules or libraries used, all the 
 features are designed and coded from the scratch.`,
     aGit: "https://github.com/Rubengon84/Rubengon84.github.io.git",
     aNetlify: "https://rubengon84.github.io",
   }),
-  (PogeonsApp = {
+];
+const soCProjectsPractices = [
+  (PigeonsApp = {
     h2: "Pigeons-React-App",
     p: "SPA react-app using useReducer and Auth0 for athentification, with a clear and responsive desing.",
     aGit: "",
@@ -83,6 +85,8 @@ features are designed and coded from the scratch.`,
     aGit: "",
     aNetlify: "https://koala-looking.netlify.app/",
   }),
+];
+const previousPractices = [
   (SocialClub = {
     h2: "SocialClubFront-End",
     p: "One of my first practices creating a simple layout for a Social Club web page.",
@@ -139,9 +143,13 @@ features are designed and coded from the scratch.`,
   }),
 ];
 
-const container = document.getElementById("projectsLargeContainer");
+const mainProjectsContainer = document.getElementById("projectsLargeContainer");
+const socPracticesContainer = document.getElementById(
+  "socPracticesLargeContainer"
+);
+const practicesContainer = document.getElementById("practicesLargeContainer");
 
-function createProject(obj) {
+function createProject(obj, containerName) {
   let divContainer = document.createElement("div");
   divContainer.className = "projectsContainer";
   let h2 = document.createElement("h2");
@@ -164,7 +172,11 @@ function createProject(obj) {
   //divContainer.appendChild(aGit);
   obj.aNetlify ? divContainer.appendChild(aNetlify) : "";
 
-  container.appendChild(divContainer);
+  containerName.appendChild(divContainer);
 }
 
-objProjects.forEach((obj) => createProject(obj));
+mainProjects.forEach((obj) => createProject(obj, mainProjectsContainer));
+soCProjectsPractices.forEach((obj) =>
+  createProject(obj, socPracticesContainer)
+);
+previousPractices.forEach((obj) => createProject(obj, practicesContainer));

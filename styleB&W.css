@@ -487,7 +487,7 @@ footer img {
 /*------------------PROJECTS PAGE-------------------------*/
 
 #projectsBody {
-  grid-template: 5% 90% 5% / repeat(8, 1fr);
+  grid-template: 3% 95% 5% / repeat(8, 1fr);
   row-gap: 1rem;
 }
 
@@ -495,6 +495,13 @@ footer img {
   grid-area: 1 / 1 / 2 / 3 ;
   margin: 1rem;
   color: white;
+}
+
+.mainContainerProjects h2 {
+ margin: 1rem auto;
+ padding: 1rem;
+ text-align: center;
+ font-size: 2rem;
 }
 
 .mainContainerProjects p {
@@ -512,11 +519,20 @@ footer img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projectWrapContainer {
+  border: 2px solid white;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .projectsContainer {
-  
-  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 0.5rem;
   display: inline-flex;
   flex-direction: column;
@@ -531,11 +547,13 @@ footer img {
   padding: 0 0.5rem;
 }
 .projectsContainer p {
+  max-height: 180px;
   font-size: 1rem;
   background-color: white;
   color: black;
   width: 90%;
   padding: 0 0.5rem;
+  overflow-x: auto;
 }
 
 .projectsContainer a {
@@ -797,7 +815,7 @@ button:hover {
  /*--------min-width: 600px--PROJECTS PAGE-------------------*/
 
  #projectsBody {
-  grid-template: 8% 84% 8% / repeat(8, 1fr);
+  grid-template: 3% 95% 2% / repeat(8, 1fr);
  }
 
 }
@@ -832,7 +850,7 @@ button:hover {
  /*--------min-width: 900px--PROJECTS PAGE-------------------*/
 
   #projectsBody {
-   grid-template: 12% 80% 8% / repeat(8, 1fr);
+     grid-template: 5% 93% 2% / repeat(8, 1fr);
   }
 
   .frame {
